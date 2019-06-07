@@ -1,0 +1,114 @@
+    user : {
+        id : 1,
+        name : null,
+        email : null,
+        phone : null,
+        type : "company",
+        cpf : null,
+        password : null,
+        device_id : null,
+        finger_print : false,
+        token : null,
+        transactions : [
+            {
+                type : "regarga",
+                amount : 100,
+                date : "34/43/43",
+            },
+            //ex 1 : estrutura como ficaria com o resource
+            {
+                transaction_type : {
+                    type : "payment",
+                },
+                data : "30/403",
+                amount_total : -200,
+                transaction_gateway : {
+                    amount : -200,
+                },
+                id_receive : {
+                    id : 2,
+                    name : "felipe",
+                    type : "client",
+                    transaction_gateway : {
+                        amount : 200,
+                    },
+                    user_client : {
+                        data_user : {
+                            photo : "https://asset.zeqr.com/img/utils/default-profile-img.jpg"
+                        }
+                    }
+                }
+            },
+            // ex 2 : ideia de uma estrutura
+            {
+                type : "payment",
+                data : "30/403",
+                amount : 200,
+                id_send : {
+                    id : 2,
+                    name : "felipe",
+                    type : "client",
+                    user_client : {
+                        data_user : {
+                            photo : "https://asset.zeqr.com/img/utils/default-profile-img.jpg"
+                        }
+                    }
+                }
+            }
+        ],
+        auth_verification : {
+        },
+        user_cards : [],
+        user_client : {
+            data_user : {
+                cpf : null,
+                finger_print : false,
+                photo : "https://asset.zeqr.com/img/utils/default-profile-img.jpg"
+            },
+            data_user_location : {
+                zip_code : null,
+                state : null,
+                city : null,
+                address : null,
+                number : 415,
+                neighborhood : null,
+                complement : null
+            },
+            data_user_personality : {
+                has_pets : null,
+                use_transport_app : null,
+                use_food_app : null,
+                has_vehicle : null,
+                vehicle_brand : null,
+                color_or_race : null,
+                religious_orientation : null,
+                sexual_orientation : null
+            },
+            data_user_personal : {
+                date_of_birth : null,
+                sex : "m",
+            },
+            data_user_profession : {
+                schooling : null,
+                college : null,
+                course : null,
+                profession : null,
+                company_works : null,
+                monthly_income : null
+            },
+            tutoo_digital_account : {
+                number_account : null,
+                amount : 0
+            },
+            tutoo_rate_client : {
+                cashout_bank_rate : null,
+                cashout_establishment_rate : null,
+                recharge_establishment_rate : null,
+                rate_points : {
+                    points_payment_rate : null,
+                    points_recharge_establishment : null,
+                    points_recharge_gateway : null
+                }
+            }
+        }
+    }
